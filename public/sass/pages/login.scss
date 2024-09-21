@@ -1,0 +1,285 @@
+.form-control {
+  padding: 0;
+  &:focus {
+    box-shadow: unset;
+  }
+}
+.form {
+  .parent {
+    .outer_form {
+      border: 1px solid #eae9e9;
+      border-radius: 10px;
+      margin-top: 50px;
+      margin-bottom: 40px;
+      .inner_form {
+        padding: 20px 40px;
+        width: 570px;
+        margin: 0 auto;
+        form{
+          .form-group {
+            margin-bottom: 20px;
+          }
+          label {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
+            span {
+              color: red;
+            }
+          }
+          input {
+            border: none;
+            border-bottom: 2px solid #d9d9d9;
+            outline: none;
+            padding-bottom: 2px;
+            // margin-bottom: 20px;
+            border-radius: 0;
+            .placeholder {
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 24px;
+              color: #02282c;
+            }
+          }
+          
+        }
+        h3 {
+          text-align: center;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 29.52px;
+          padding-bottom: 15px;
+          color: #060606;
+        }
+        p {
+          text-align: center;
+          font-size: 14px;
+          font-weight: 500;
+          padding-bottom: 63px;
+          color: #7a7a7a;
+          a {
+            color: #02282c;
+            font-family: 700;
+            &:hover {
+              border-bottom: 2px solid black;
+            }
+          }
+        }
+        button {
+          width: 100%;
+          background-color: #02282c;
+          border-radius: 10px;
+          margin-bottom: 30px;
+          border: none;
+          transition: all 0.5s ease-in;
+          &:hover {
+            background-color: #02331a;
+            color: #ffffff;
+          }
+        }
+        .line_content {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          margin-bottom: 50px;
+          padding: 0 47px;
+          .line {
+            height: 2px;
+            background-color: #D9D9D9;
+            width: 100%;
+          }
+          span {
+            font-size: 14px;
+            font-weight: 400;
+            color: #7a7a7a;
+            line-height: 21px;
+          }
+        }
+        .signup_with {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 21.5px;
+          // .left_child{
+          //     float: left;
+          // }
+          // .right_child{
+          //     float: right;
+          // }
+          .company {
+            border: 1px solid #02282c;
+            border-radius: 10px;
+            padding: 20px 30px;
+            h3 {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 21px;
+            }
+            .img_area {
+              width: 54px;
+              height: 54px;
+              margin: 0 auto;
+              margin-bottom: 20px;
+              border-radius: 50%;
+              img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+/* Above 1920 desktop */
+@media (min-width: 1920px) {
+}
+
+/* 1680 desktop */
+@media (min-width: 1680px) and (max-width: 1919px) {
+}
+
+/* 1600 desktop */
+@media (min-width: 1600px) and (max-width: 1679px) {
+}
+
+/* Above 1400 and Below 1599 Desktop*/
+@media (min-width: 1400px) and (max-width: 1599px) {
+}
+
+/* 1300 desktop only */
+@media (min-width: 1300px) and (max-width: 1399px) {
+}
+
+/* 1200 desktop only */
+@media (min-width: 1200px) and (max-width: 1299px) {
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+  .form {
+    .parent {
+      .outer_form {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .inner_form {
+          width: 100%;
+          h3 {
+            font-size: 22px;
+            line-height: 25.52px;
+          }
+          p{
+            padding-bottom: 40px;
+          }
+          .signup_with {
+            padding: 0;
+            gap: 10px;
+            justify-content: center;
+            .company {
+              padding: 15px;
+              .img_area {
+                height: 40px;
+                width: 40px;
+              }
+            }
+          }
+          .line_content {
+            padding: 0 45px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+  .form {
+    .parent {
+      .outer_form {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .inner_form {
+          width: 100%;
+          padding: 10px 15px;
+          p{
+            padding-bottom: 32px;
+          }
+          h3 {
+            font-size: 22px;
+            padding-bottom: 10px;
+          }
+          .line_content {
+            padding: 0 25px;
+          }
+          .signup_with {
+            padding: 0;
+            gap: 10px;
+            .company {
+              padding: 15px;
+              .img_area {
+                height: 40px;
+                width: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+  .form {
+    .forgot{
+        padding-bottom: 40px;
+    }
+    .parent {
+      .outer_form {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .inner_form {
+          width: 100%;
+          padding: 10px 15px;
+          p{
+            padding-bottom: 30px;
+          }
+          h3 {
+            font-size: 20px;
+            padding-bottom: 10px;
+          }
+          .line_content {
+            padding: 0 25px;
+          }
+          .signup_with {
+            padding: 0;
+            gap: 10px;
+            .company {
+              padding: 15px;
+              .img_area {
+                height: 40px;
+                width: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+}

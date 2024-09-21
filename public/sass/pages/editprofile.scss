@@ -1,0 +1,348 @@
+@import "../base/variable.scss";
+@import "../base/mixins.scss";
+
+.dashboard_section {
+  &.edit_profile_section {
+    .upper_layer {
+      .parent {
+        .right_area {
+            .profile_textarea{
+                padding-bottom: 40px;
+            } 
+          .edit_profile {
+            .edit {
+              width: 215px;
+              margin: 0 auto;
+              padding-bottom: 40px;
+
+              .image_parent {
+                position: relative;
+                .img_area {
+                  height: 85px;
+                  width: 85px;
+                  border-radius: 50%;
+                  overflow: hidden;
+                  margin: 0 auto;
+                 img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                  }
+                }
+                .icon {
+                    position: absolute;
+                    font-size: 20px;
+                    top: 11px;
+                    left: 138px;
+                    a{
+                        color:  #989898;;
+                    }
+                }
+              }
+
+              .head {
+                h3 {
+                  font-size: 20px;
+                  font-weight: 500;
+                  color: #000000;
+                  text-align: center;
+                  padding-bottom: 5px;
+                }
+              }
+              p {
+                text-align: center;
+                font-size: 14px;
+                font-weight: 400;
+                color: #4d4d4d;
+              }
+            }
+            form {
+              width: 500px;
+              margin: 0 auto;
+              .parent {
+                padding-bottom: 30px;
+
+                .form-control {
+                  border: none;
+                  border-bottom: 1px solid #323232;
+                }
+              }
+              .button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                margin-top: 40px;
+                padding-bottom: 90px;
+                a {
+                  font-size: 14px;
+                  font-weight: 400;
+                  color: #7a7a7a;
+                }
+                button {
+                  padding: 12px 22px;
+                  background-color: #02282c;
+                  border-radius: 20px;
+                  font-size: 14px;
+                  font-weight: 400;
+                  color: #fefefe;
+                  border: none;
+                  &:hover {
+                    background-color: lighten($color: #02282c, $amount: 10%);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 1680 desktop */
+@media (min-width: 1680px) and (max-width: 1919px) {
+}
+
+/* 1600 desktop */
+@media (min-width: 1600px) and (max-width: 1679px) {
+}
+
+/* Above 1400 and Below 1599 Desktop*/
+@media (min-width: 1400px) and (max-width: 1599px) {
+}
+
+/* 1300 desktop only */
+@media (min-width: 1300px) and (max-width: 1399px) {
+    .dashboard_section{
+        &.edit_profile_section{
+            .upper_layer{
+                .parent{
+                    .right_area{
+                        .profile_textarea{
+                            padding-bottom: 37px;
+                        }
+                        .edit_profile{
+                            form {
+                                .button{
+                                    padding-bottom: 70px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }     
+}
+
+/* 1200 desktop only */
+@media (min-width: 1200px) and (max-width: 1299px) {
+    .dashboard_section{
+        &.edit_profile_section{
+            .upper_layer{
+                .parent{
+                    .right_area{
+                        .profile_textarea{
+                            padding-bottom: 37px;
+                        }
+                        .edit_profile{
+                            .edit{
+                                padding-bottom: 37px;
+                            }
+                            form {
+                                .button{
+                                    padding-bottom: 60px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .dashboard_section{
+        &.edit_profile_section{
+            .upper_layer{
+                .parent{
+                    .right_area{
+                        .profile_textarea{
+                            padding-bottom: 35px;
+                        }
+                        .edit_profile{
+                            .edit{
+                                padding-bottom: 35px;
+                            }
+                            form {
+                                .button{
+                                    padding-bottom: 50px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .dashboard_section{
+        &.edit_profile_section{
+            .upper_layer{
+                .parent{
+                    .right_area{
+                        .profile_textarea{
+                            padding-bottom: 33px;
+                            h3{
+                                font-size: 22px;
+                            }
+                        }
+                        .edit_profile{
+                            .edit{
+                                padding-bottom: 33px;
+                            }
+                            form {
+                                width: 350px;
+                                .button{
+                                    margin-top: 35px;
+                                    padding-bottom: 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    .dashboard_section{
+        &.edit_profile_section{
+            .upper_layer{
+                .parent{
+                    display: block;
+                    .right_area{
+                        float: none;
+                        width: 100%;
+                        .profile_textarea{
+                            padding: 10px 20px;
+                            padding-bottom: 30px;
+                            h3{
+                                font-size: 20px;
+                            }
+                        }
+                        .edit_profile{
+                            .edit{
+                                padding-bottom: 30px;
+                            }
+                            form {
+                                .parent{
+                                    padding-bottom: 20px;
+                                }
+                                .button{
+                                    margin-top: 33px;
+                                    padding-bottom: 35px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    .dashboard_section{
+        &.edit_profile_section{
+            .upper_layer{
+                .parent{
+                    display: block;
+                    .right_area{
+                        float: none;
+                        width: 100%;
+                        padding: 0 15px;
+                        .profile_textarea{
+                            padding: 10px 0px;
+                            padding-bottom: 25px;
+                            h3{
+                                font-size: 16px;
+                            }
+                        }
+                        .edit_profile{
+                            .edit{
+                                padding-bottom: 25px;
+                            }
+                            form {
+                                width: 300px;
+                                .button{
+                                    margin-top: 30px;
+                                    padding-bottom: 25px;
+                                    button{
+                                        padding: 9px 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    .dashboard_section{
+        &.edit_profile_section{
+            .upper_layer{
+                .parent{
+                    display: block;
+                    .right_area{
+                        float: none;
+                        width: 100%;
+                        padding: 0;
+                        .profile_textarea{
+                            padding: 10px 20px;
+                            padding-bottom: 25px;
+                            h3{
+                                font-size: 16px;
+                            }
+                        }
+                        .edit_profile{
+                            .edit{
+                                padding-bottom: 25px;
+                            }
+                            form {
+                                width: 250px;
+                                .parent{
+                                    padding-bottom: 10px;
+                                }
+                                .button{
+                                    margin-top: 30px;
+                                    padding-bottom: 25px;
+                                    button{
+                                        padding: 9px 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+}

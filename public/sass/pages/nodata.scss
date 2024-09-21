@@ -1,0 +1,43 @@
+.dashboard_section{
+    padding: 90px 0;
+    .parent_area{
+        .left_Area{
+            width: 250px;
+            .side_area{
+                
+            }
+        }
+        .right_area{
+            width: calc(100% - 250px);
+        }
+    }
+    &.my_profile_section{
+        .parent_area{
+            .right_area{
+                form
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dashboard_section{
+    &.edit_profile_section{
+        table{
+
+        }
+    }
+}

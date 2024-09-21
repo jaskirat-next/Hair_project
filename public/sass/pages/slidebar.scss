@@ -1,0 +1,98 @@
+// .main {
+//     width: 250px;
+//   .top_section {
+//     display: flex;
+//     gap: 12px;
+//     align-items: center;
+//     background-color: #FFE292;
+//     border-radius: 8px;
+//     padding: 20px 30px;
+//     margin-bottom: 10px;
+//     box-shadow: 2px 4px 10px 0px #1E1E1E08;
+//     .left {
+//       .img_area {
+//         height: 60px;
+//         width: 60px;
+//         border-radius: 50%;
+//         overflow: hidden;
+//         img {
+//           height: 100%;
+//           width: 100%;
+//           object-fit: cover;
+//         }
+//       }
+//     }
+//     .right{
+//         .text{
+//             font-size: 14px;
+//             font-weight: 400;
+//             color: #4D4D4D;
+//             padding-bottom: 2px;
+//         }
+//         .name{
+//             font-size: 16px;
+//             font-weight: 400;
+//             color: #000000;
+//         }
+//     }
+//   }
+//   .bottom_section{
+//     height: 646px;
+//     background-color: #033439;
+//     padding: 44px 20px;
+//     border-radius: 8px;
+//     ul{
+//         li{
+//             margin-bottom: 10px;
+//             width: 217px;
+//             height: 42px;
+//             border-radius: 8px;
+//             padding: 9px 12px;
+//             position: relative;
+//             transition: all .5s ease-in-out ;
+//             .icon{
+//                 font-size: 25px;
+//                 color: #FEFEFE;
+//                 transition: all .5s ease-in-out ;
+
+//             }
+//             a{
+//                 font-size: 16px;
+//                 font-weight: 400;
+//                 color: #FEFEFE;
+//                 padding-left: 25px;
+//                 padding-top: 5px;
+//                 transition: all .5s ease-in-out ;
+
+//             }
+//             &:hover , &.active{
+//                 background-color: #FFE292;
+//                 a{
+//                     color: #1E1E1E;
+//                 }
+//                 .icon{
+//                     color: #1E1E1E;
+//                 }
+//                 &::after{
+//                     content: '';
+//                     opacity: 1;
+//                 }
+//             }
+//             &::after{
+//                 content: '';
+//                 width: 4px;
+//                 height: 20px;
+//                 background-color: #FCAE30;
+//                 position: absolute;
+//                 left: 0;
+//                 top: 11px;
+//                 opacity: 0;
+//             transition: all .5s ease-in-out ;
+
+                
+//             }
+           
+//         }
+//     }
+//   }
+// }

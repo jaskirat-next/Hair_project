@@ -1,0 +1,98 @@
+@import "../base/variable.scss";
+@import "../base/mixins.scss";
+
+.cart {
+//   width: 100%;
+//   max-width: 350px;
+  margin: 20px 0;
+  border: 0.5px solid #d0d0d0;
+  border-radius: 16px;
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  .icon {
+    position: absolute;
+    right: 7px;
+    top: 5px;
+    color: transparent;
+    color: #02282c;
+    font-size: 24px;
+  }
+  .stripe {
+    width: 120px;
+    height: 40px;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    background-color: rgb(117, 65, 65);
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    padding: 10px;
+  }
+  .img_area {
+    height: 280px;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .content {
+    padding: 10px;
+    .hproduct {
+      display: inline-block;
+      padding: 2px 8px;
+      border: 0.5px solid #7a7a7a;
+      border-radius: 16px;
+      font-size: 10px;
+      font-weight: 400;
+      color: #7a7a7a;
+      background-color: #d9d9d966;
+      margin-bottom: 10px;
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1e1e1e;
+      padding-bottom: 15px;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      color: #989898;
+      padding-bottom: 15px;
+    }
+    .last {
+      display: flex;
+      justify-content: space-between;
+      .stock {
+        border: 0.5px solid #077928;
+        padding: 6px 10px;
+        border-radius: 20px;
+        background-color: #0779284d;
+        font-size: 14px;
+        font-weight: 500;
+        color: #077928;
+        height: fit-content;
+      }
+      .price {
+        display: flex;
+        gap: 5px;
+        h4 {
+          font-size: 13px;
+          font-weight: 700;
+          color: #d0d0d0;
+          text-decoration: line-through;
+        }
+        h3 {
+          font-size: 16px;
+          font-weight: 700;
+          color: #1e1e1e;
+        }
+      }
+    }
+  }
+}

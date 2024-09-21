@@ -1,0 +1,908 @@
+.top_section {
+  border-bottom: 1px solid #d0d0d0;
+  padding: 20px 0;
+  .content {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    .arrow_icon {
+      a {
+        font-size: 35px;
+        color: #000000;
+      }
+    }
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1e1e1e;
+      span {
+        font-weight: 600;
+        color: #7a7a7a;
+      }
+    }
+  }
+}
+
+.content_details {
+  .for_flex {
+    display: flex;
+    gap: 20px;
+    padding: 90px 0;
+    .accordian_area {
+      width: calc(100% - 430px);
+      .accordion {
+        margin-bottom: 45px;
+        .accordion-header {
+          button {
+            color: #ffffff;
+          }
+        }
+        .accordion-button {
+          border-radius: unset;
+          border: none;
+          border-bottom: 0.5px solid #d0d0d0;
+          box-shadow: unset;
+          box-shadow: 2px 4px 10px 0px #1e1e1e08;
+          font-size: 16px;
+          font-weight: 400;
+          color: #1e1e1e;
+          background-color: #02282c;
+          &::after {
+            color: #ffffff;
+            filter: invert(1);
+          }
+          padding: 20px 30px;
+          &.collapsed {
+            border-radius: unset;
+            background-color: #ffffff;
+            color: #1e1e1e;
+            font-size: 16px;
+            font-weight: 400;
+            &::after {
+              filter: invert(0);
+            }
+          }
+        }
+        .accordion-body {
+          .order_summary{
+            display: flex;
+            border: 0.5px solid #D0D0D0;
+            padding: 10px;
+            gap: 15px;
+            align-items: center;
+            .img_area{
+              width: 180px;
+              height: 150px;
+              border-radius: 16px;
+              overflow: hidden;
+              img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+              }
+            }
+            .right_area{
+              .tag{
+                border: 0.5px solid #7A7A7A;
+                display: inline-block;
+                font-size: 10px;
+                font-weight: 400;
+                color: #7A7A7A;
+                padding: 2px 8px;
+                border-radius: 16px;
+                background-color: #D9D9D966;
+                margin-bottom: 10px;
+              }
+              h3{
+                font-size: 20px;
+                font-weight: 700;
+                color: #1E1E1E;
+                padding-bottom: 10px;
+              }
+              
+            }
+          }
+          .form_body {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 80px;
+            .add_2 {
+              width: 220px;
+              border: 0.8px solid #d0d0d0;
+              border-radius: 10px;
+              padding: 40px 0px;
+              h3 {
+                font-size: 16px;
+                font-weight: 500;
+                color: #1e1e1e;
+                padding-bottom: 10px;
+                text-align: center;
+              }
+              .icon {
+                text-align: center;
+                a {
+                  font-size: 30px;
+                  color: #d4d4d3;
+                }
+              }
+            }
+            .add_1 {
+              width: 220px;
+              border: 0.8px solid #d0d0d0;
+              padding: 15px;
+              border-radius: 10px;
+              .content {
+                width: 150px;
+                p {
+                  font-size: 14px;
+                  font-weight: 400;
+                  color: #4d4d4d;
+                  line-height: 18px;
+                }
+              }
+              .icons {
+                display: flex;
+                justify-content: end;
+                gap: 10px;
+                a {
+                  font-size: 20px;
+                  color: #989898;
+                }
+              }
+              .form-check {
+                padding-left: 0;
+                label {
+                  font-size: 14px;
+                  font-weight: 400;
+                  color: #1e1e1e;
+                }
+                .form-check-input {
+                  float: right;
+                  color: #ffc22b;
+                  box-shadow: unset;
+                }
+                input:checked{
+                  border-color: #FFC22B;
+                  background-color: #ffc22b;
+                }
+              }
+            }
+          }
+          .debit_card{
+            h3{
+              font-size: 16px;
+              font-weight: 400;
+              color: #1E1E1E;
+              padding-bottom: 15px;
+            }
+            .radio{
+              display: flex;
+              gap: 15px;
+              align-items: center;
+              margin-bottom: 20px;
+              .form-check-input:checked {
+                background-color: #FFC22B;
+                border-color: #FFC22B;
+                box-shadow: unset;
+            }
+              .old_info{
+                border: 1px solid #D0D0D0;
+                padding: 15px 25px;
+                flex-grow: 1;
+                border-radius: 5px;
+                
+                .left{
+                  float: left;
+                  width: calc(100% - 180px);
+                  h3{
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #1E1E1E;
+                    padding-bottom: 10px;
+                  }
+                  h2{
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #1E1E1E;
+                  }
+                }
+                .right{
+                  float:  right;
+                  width: 180px;
+                  .red{
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    background-color: #C42C2C;
+                    position: relative;
+                    &::after{
+                      content: '';
+                      position: absolute;
+                      left: 15px;
+                      height: 20px;
+                      width: 20px;
+                      background-color: #077928;
+                      border-radius: 50%;
+                    }
+                  }
+                }
+              }
+            }
+            .add_new_card{
+              width: 750px;
+              margin: 0 auto;
+              border: 1px solid #D0D0D0;
+              box-shadow: 2px 4px 10px 0px #1E1E1E08;
+              padding: 30px 35px;
+              form{
+                .card_num{
+                  padding-bottom: 30px;
+                .form-control{
+                  border: unset;
+                  border-bottom: 1px solid #9B9797;
+                }
+                }
+                h3{
+                  font-size: 16px;
+                  font-size: 400;
+                  color: #989595;
+                  padding-bottom: 10px;
+                }
+                .for_flex3{
+                  display: flex;
+                  gap: 70px;
+                .time{
+                  display: flex;
+                  gap: 40px;
+                  .form-select-lg {
+                    width: 90px;
+                    border: unset;
+                    border-bottom: 1px solid #9B9797;
+                    border-radius: unset;
+                    box-shadow: none;
+                  }
+                }
+                .cvv{
+                  flex-grow: 1;
+                  .form-control{
+                    border: unset;
+                    border-bottom: 1px solid #9B9797;
+                  }
+                }
+              }
+            }
+            }
+          }
+        }
+      }
+      button {
+        border: 1px solid #1e1e1e;
+        padding: 12px 22px;
+        border-radius: 20px;
+
+        background-color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        color: #02282c;
+        &:hover {
+          background-color: #02282c;
+          color: #ffffff;
+        }
+      }
+    }
+    .right {
+      width: 430px;
+      .price_details {
+        border: 0.5px solid #d0d0d0;
+        margin-bottom: 45px;
+        .heading {
+          padding: 25px 30px;
+          border-bottom: 1px solid #d9d9d9;
+          h3 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1e1e1e;
+          }
+        }
+        .total_price {
+          padding: 30px;
+          justify-content: space-between;
+          border-bottom: 1.5px dashed #d9d9d9;
+          border-width: 3px;
+
+          .item_price {
+            display: flex;
+            justify-content: space-between;
+            span {
+              font-size: 16px;
+              font-weight: 400;
+              color: #1e1e1e;
+            }
+            .green {
+              color: #3d9653;
+            }
+            .red {
+              color: #ff0000;
+            }
+          }
+        }
+        .total_amount {
+          padding: 20px 30px;
+          border-bottom: 1.5px dashed #d9d9d9;
+          border-width: 3px;
+          .for_flex2 {
+            display: flex;
+            justify-content: space-between;
+            span {
+              font-size: 18px;
+              font-weight: 600;
+              color: #1e1e1e;
+              padding-bottom: 10px;
+            }
+          }
+          p {
+            font-size: 14px;
+            font-weight: 400;
+            color: #989898;
+          }
+        }
+        .money {
+          display: flex;
+          gap: 13px;
+          align-items: center;
+          padding: 25px 0;
+          justify-content: center;
+          .img_area {
+            height: 22px;
+            width: 22px;
+            img {
+              height: 100%;
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #3d9653;
+          }
+        }
+      }
+      .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        .checkout {
+          button {
+            background-color: #02282c;
+            padding: 12px 22px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 400;
+            color: #fefefe;
+            border: none;
+            &:hover {
+              background-color: lighten($color: #02282c, $amount: 10%);
+            }
+          }
+        }
+        .cancel {
+          button {
+            font-size: 14px;
+            font-weight: 400;
+            color: #1e1e1e;
+            padding: 12px 22px;
+            border-radius: 20px;
+            background-color: #ffffff;
+            &:hover {
+              background-color: #02282c;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Above 1920 desktop */
+@media (min-width: 1920px) {
+}
+
+/* 1680 desktop */
+@media (min-width: 1680px) and (max-width: 1919px) {
+}
+
+/* 1600 desktop */
+@media (min-width: 1600px) and (max-width: 1679px) {
+}
+
+/* Above 1400 and Below 1599 Desktop*/
+@media (min-width: 1400px) and (max-width: 1599px) {
+}
+
+/* 1300 desktop only */
+@media (min-width: 1300px) and (max-width: 1399px) {
+  .top_section {
+    .content {
+      gap: 25px;
+      h3 {
+        font-size: 20px;
+      }
+      .arrow_icon {
+        a {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+
+  .content_details {
+    .for_flex {
+      padding: 70px 0;
+      .right {
+        width: 400px;
+      }
+      .accordian_area {
+        width: calc(100% - 400px);
+        .accordion {
+          .accordion-button {
+            padding: 18px 28px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 1200 desktop only */
+@media (min-width: 1200px) and (max-width: 1299px) {
+  .top_section {
+    .content {
+      gap: 25px;
+      h3 {
+        font-size: 20px;
+      }
+      .arrow_icon {
+        a {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+
+  .content_details {
+    .for_flex {
+      padding: 70px 0;
+      .right {
+        width: 400px;
+      }
+      .accordian_area {
+        width: calc(100% - 400px);
+        .accordion {
+          .accordion-button {
+            padding: 18px 28px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .top_section {
+    .content {
+      gap: 25px;
+      h3 {
+        font-size: 20px;
+      }
+      .arrow_icon {
+        a {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+
+  .content_details {
+    .for_flex {
+      padding: 50px 0;
+      .accordian_area {
+        width: calc(100% - 350px);
+        .accordion {
+          .accordion-button {
+            padding: 16px 26px;
+          }
+        }
+      }
+      .right {
+        width: 350px;
+        .price_details {
+          margin-bottom: 40px;
+          .heading {
+            padding: 22px 25px;
+          }
+          .total_price {
+            padding: 25px;
+          }
+          .total_amount {
+            padding: 20px 25px;
+          }
+          .money {
+            padding: 22px 0;
+          }
+        }
+        .buttons {
+          .checkout {
+            button {
+              padding: 11px 15px;
+            }
+          }
+          .cancel {
+            button {
+              padding: 11px 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+  .top_section {
+    .content {
+      gap: 20px;
+      h3 {
+        font-size: 20px;
+      }
+      .arrow_icon {
+        a {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+
+  .content_details {
+    .for_flex {
+      padding: 40px 0;
+      .accordian_area {
+        width: calc(100% - 300px);
+        .accordion {
+          .accordion-button {
+            padding: 14px 24px;
+          }
+        }
+        button {
+          padding: 9px 12px;
+        }
+      }
+      .right {
+        width: 300px;
+        .price_details {
+          margin-bottom: 40px;
+          .heading {
+            padding: 20px 22px;
+            h3 {
+              font-size: 20px;
+            }
+          }
+          .total_price {
+            padding: 22px;
+            .item_price {
+              span {
+                font-size: 15px;
+              }
+            }
+          }
+          .total_amount {
+            padding: 18px 22px;
+            .for_flex2 {
+              span {
+                font-size: 17px;
+              }
+            }
+          }
+          .money {
+            padding: 22px 0;
+            gap: 10px;
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+        .buttons {
+          gap: 15px;
+          .checkout {
+            button {
+              padding: 9px 12px;
+            }
+          }
+          .cancel {
+            button {
+              padding: 9px 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+  .top_section {
+    .content {
+      gap: 15px;
+      h3 {
+        font-size: 18px;
+      }
+      .arrow_icon {
+        a {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  .content_details {
+    .for_flex {
+      padding: 35px 0;
+      .accordian_area {
+        width: calc(100% - 270px);
+        button {
+          padding: 9px 12px;
+        }
+        .accordion {
+          margin-bottom: 30px;
+
+          .accordion-button {
+            padding: 12px 22px;
+          }
+        }
+      }
+      .right {
+        width: 270px;
+        .price_details {
+          margin-bottom: 30px;
+          .heading {
+            padding: 18px 20px;
+            h3 {
+              font-size: 18px;
+            }
+          }
+          .total_price {
+            padding: 20px;
+            .item_price {
+              span {
+                font-size: 15px;
+              }
+            }
+          }
+          .total_amount {
+            padding: 16px 20px;
+            .for_flex2 {
+              span {
+                font-size: 15px;
+              }
+            }
+          }
+          .money {
+            padding: 20px 0;
+            gap: 8px;
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+        .buttons {
+          gap: 10px;
+          .checkout {
+            button {
+              padding: 9px 12px;
+            }
+          }
+          .cancel {
+            button {
+              padding: 9px 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+  .top_section {
+    .content {
+      gap: 15px;
+      h3 {
+        font-size: 18px;
+      }
+      .arrow_icon {
+        a {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  .content_details {
+    .for_flex {
+      padding: 30px 0;
+      flex-wrap: wrap;
+      .accordian_area {
+        width: 100%;
+        button {
+          padding: 9px 12px;
+          display: block;
+          margin: 0 auto;
+          background-color: #02282c;
+          color: #ffffff;
+          &:hover {
+            background-color: lighten($color: #02282c, $amount: 10%);
+          }
+        }
+        .accordion {
+          margin-bottom: 30px;
+          .accordion-button {
+            padding: 10px 20px;
+          }
+          .accordion-button.collapsed {
+            display: flex;
+          }
+        }
+      }
+      .right {
+        width: 100%;
+        .price_details {
+          margin-bottom: 25px;
+          .heading {
+            padding: 16px 18px;
+            h3 {
+              font-size: 16px;
+            }
+          }
+          .total_price {
+            padding: 18px;
+            .item_price {
+              span {
+                font-size: 14px;
+              }
+            }
+          }
+          .total_amount {
+            padding: 14px 18px;
+            .for_flex2 {
+              span {
+                font-size: 14px;
+              }
+            }
+          }
+          .money {
+            padding: 18px 0;
+            gap: 8px;
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+        .buttons {
+          gap: 10px;
+          .checkout {
+            button {
+              padding: 9px 12px;
+            }
+          }
+          .cancel {
+            button {
+              padding: 9px 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+  .top_section {
+    .content {
+      gap: 15px;
+      h3 {
+        font-size: 18px;
+      }
+      .arrow_icon {
+        a {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+  .content_details {
+    .for_flex {
+      padding: 30px 0;
+      flex-wrap: wrap;
+      .accordian_area {
+        width: 100%;
+        button {
+          padding: 9px 12px;
+          display: block;
+          margin: 0 auto;
+          background-color: #02282c;
+          color: #ffffff;
+          &:hover {
+            background-color: lighten($color: #02282c, $amount: 10%);
+          }
+        }
+        .accordion {
+          margin-bottom: 30px;
+          .accordion-button {
+            padding: 10px 20px;
+          }
+          .accordion-button.collapsed {
+            display: flex;
+          }
+        }
+      }
+      .right {
+        width: 100%;
+        .price_details {
+          margin-bottom: 25px;
+          .heading {
+            padding: 16px 18px;
+            h3 {
+              font-size: 16px;
+            }
+          }
+          .total_price {
+            padding: 18px;
+            .item_price {
+              span {
+                font-size: 14px;
+              }
+            }
+          }
+          .total_amount {
+            padding: 14px 18px;
+            .for_flex2 {
+              span {
+                font-size: 14px;
+              }
+            }
+          }
+          .money {
+            padding: 18px 0;
+            gap: 8px;
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+        .buttons {
+          gap: 10px;
+          .checkout {
+            button {
+              padding: 9px 12px;
+            }
+          }
+          .cancel {
+            button {
+              padding: 9px 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+}
