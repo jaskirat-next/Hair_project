@@ -157,8 +157,11 @@ function Details() {
                               >
                                 .......
                               </button> */}
-                              <h4>$150</h4>
-                              <h2>$200</h2>
+                              <div className="price">
+                              <h2>$150</h2>
+                              <h4>$200</h4>
+                              
+                              </div>
                             </div>
                           </div>
                         ))}

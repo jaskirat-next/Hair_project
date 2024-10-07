@@ -31,7 +31,7 @@ function form() {
                     account, We’ll send you the instructions to reset your
                     password
                   </p>
-                  <Form>
+                  <Form method="POST" action="">
                     <Form.Group
                       className="form-group inp"
                       controlId="formBasicEmail"
