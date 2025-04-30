@@ -420,8 +420,8 @@ function grid() {
                           <div className="last">
                             <div className="stock">In Stock</div>
                             <div className="price">
-                              <h4>$ 200</h4>
-                              <h3>$ 150</h3>
+                              <h4> 200 </h4>
+                              <h3> 150</h3>
                             </div>
                           </div>
                         </div>
@@ -446,8 +446,8 @@ function grid() {
                           <div className="last">
                             <div className="stock">In Stock</div>
                             <div className="price">
-                              <h4>$ 200</h4>
-                              <h3>$ 150</h3>
+                              <h4> 200 rs</h4>
+                              <h3> 150 rs</h3>
                             </div>
                           </div>
                         </div>
